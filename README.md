@@ -1,27 +1,56 @@
-#How It Works
+# **Affine Cipher**
 
-The Affine Cipher uses the following formula for encryption:
+This C++ program implements the Affine Cipher for encrypting and decrypting messages. The Affine Cipher is a type of monoalphabetic substitution cipher that uses a mathematical function to encrypt and decrypt messages.
 
-𝐸(𝑥)=(𝑎⋅𝑥+𝑏)mod
- 
-For decryption, it uses:
+## **Features**
 
-D(x)=a^-1⋅(x−b)mod m
+- **Encryption**: Encrypts a message using the Affine Cipher with user-provided keys.
+- **Decryption**: Decrypts a message using the Affine Cipher with user-provided keys.
+- **Input Validation**: Ensures that the keys and options provided by the user are valid.
 
-Where:
+## **Requirements**
 
-E(x) is the encrypted character.
-D(x) is the decrypted character.
-a (key1) and b (key2) are keys used for encryption.
-a^−1(key3) is the modular multiplicative inverse of a modulo m.
-x is the numerical equivalent of the plaintext character.
-m is the size of the alphabet (for English, m=26).
+- A C++ compiler (e.g., GCC, Clang)
+- C++11 or later
 
-#Notes
-Key1 and Key3 must be chosen such that they are coprime with 26 for the modular inverse to exist.
-The program handles only uppercase English letters and ignores spaces and non-alphabet characters.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## **How to Use**
 
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/yourusername/affine-cipher.git
+    cd affine-cipher
+    ```
+
+2. **Compile the program**:
+    ```sh
+    g++ -o affine_cipher affine_cipher.cpp
+    ```
+
+3. **Run the program**:
+    ```sh
+    ./affine_cipher
+    ```
+
+4. **Follow the on-screen prompts**:
+    - Enter the message you wish to encrypt or decrypt.
+    - Enter the keys (key1, key2, key3) as prompted. Ensure that the keys are positive integers.
+    - Choose whether to encrypt or decrypt the message.
+    - To exit the program, press 'e' or 'E'. Press any other key to run the program again.
+
+## **Example Usage**
+
+```text
+Please enter your message: HELLO WORLD
+
+Please enter key1: 5
+Please enter key2: 8
+Please enter key3: 21
+
+Please choose an option:
+1 = Encrypt the message
+2 = Decrypt the message
+1
+
+Your encrypted message: RCLLA QXLYA
+
+To exit the program, press ('e' or 'E') or press any character to try again:
