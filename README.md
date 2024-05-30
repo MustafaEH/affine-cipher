@@ -18,6 +18,7 @@ x is the numerical equivalent of the plaintext character.
 m is the size of the alphabet (for English, m=26).
 
 #Notes
+
 Key1 and Key3 must be chosen such that they are coprime with 26 for the modular inverse to exist.
 The program handles only uppercase English letters and ignores spaces and non-alphabet characters.
 License
