@@ -1,4 +1,4 @@
-#How It Works
+How It Works
 The Affine Cipher uses the following formula for encryption:
 
 𝐸(𝑥)=(𝑎⋅𝑥+𝑏)mod
